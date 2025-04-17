@@ -11,7 +11,7 @@ SOLID-принципы в действии: простой и гибкий па�
 Установите пакет через Composer:
 
 ```bash
-composer require vendor/laravel-url-shortener
+composer require legich13/laravel-url-shortener
 ```
 
 ### Публикация файлов
