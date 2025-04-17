@@ -1,0 +1,39 @@
+{
+  "name": "vendor/laravel-url-shortener",
+  "description": "A Laravel package for URL shortening (SOLID‑compliant)",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.0|^7.0|^8.0",
+    "phpunit/phpunit": "^9.0|^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendor\\UrlShortener\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vendor\\UrlShortener\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vendor\\UrlShortener\\UrlShortenerServiceProvider"
+      ],
+      "aliases": {
+        "UrlShortener": "Vendor\\UrlShortener\\Facades\\UrlShortener"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+} 

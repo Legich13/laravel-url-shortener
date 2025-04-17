@@ -1,0 +1,24 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateShortenedUrlsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create(config('url-shortener.table'), function (Blueprint $table) {
+            $table->id();
+            $table->string('code')->unique();
+            $table->text('long_url');
+            $table->unsignedBigInteger('clicks')->default(0);
+            $table->timestamps();
+        });
+    }
+
+    public function down()
+    {
+        Schema::dropIfExists(config('url-shortener.table'));
+    }
+} 
