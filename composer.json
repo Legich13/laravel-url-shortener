@@ -1,5 +1,5 @@
 {
-  "name": "vendor/laravel-url-shortener",
+  "name": "legich13/laravel-url-shortener",
   "description": "A Laravel package for URL shortening (SOLID‑compliant)",
   "type": "library",
   "license": "MIT",
@@ -36,4 +36,4 @@
   },
   "minimum-stability": "dev",
   "prefer-stable": true
-} 
+}
